@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/form", (req, res) => {
-  console.log("route form");
+  console.log("route /form");
   //   Le console.log de req.fields nous affiche les données qui ont été rentrées dans les inputs (dans le formulaire frontend) :
 
   console.log(req.fields);
@@ -53,7 +53,7 @@ app.post("/form", (req, res) => {
 });
 
 app.all("*", (req, res) => {
-  console.log("this rout doesn t exist");
+  console.log("this rout doesn't exist");
 });
 
 app.listen(process.env.PORT, () => {
