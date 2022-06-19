@@ -52,6 +52,10 @@ app.post("/form", (req, res) => {
     });
 });
 
+app.all("*", (req, res) => {
+  console.log("this rout doesn t exist");
+});
+
 app.listen(process.env.PORT, () => {
   console.log("serveur is started");
 });
